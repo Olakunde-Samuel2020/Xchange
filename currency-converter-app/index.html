@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/font-awesome.min.css">
+    <title>Xchange - Currency Converter App</title>
+</head>
+<body>
+    <section  id="top-section">
+        <header class="logo" >
+            <img src="/cca-images/currency converter app logo.png"  class="x-logo">
+        </header>
+        <div class="container">
+            <section class="x-intoduction">
+                <h1 class="x-header">
+                   <span class="h1">Introduction</span>
+                </h1>
+                <div class="x-text">
+                    <span class="text">Welcome to Xcha`n`ge, your go-to web app for hassel-free currency conversions. Designed for travellers, shoppers, and business professionals alike, our app ensures you get the most accurate and up-to-date exchange rates.</span>
+                </div>
+                            <!-- Button to open the modal -->
+                <button id="openModalBtn">Generate</button>
+
+                <!-- The Modal -->
+                <center><div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        
+                       
+                        <form id="currency-form">
+                            <span class="close">
+                                &times;
+                                
+                        </span>
+                            <div class="input-amt">
+                                <select name="currency-list1" id="currency-list1" class="currency-list" onchange="convertCurrency()">
+                                    <option value="">CUR.</option>
+                                    <option value="NGN">NGN</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                                <input type="number" name="amount1" id="amount1" class="amount1" oninput="convertCurrency()">
+                            </div>
+                            <div class="convert-icon">
+                               <center><img src="money-bill-transfer-solid.svg" class="converter" alt="Convert icon"></center> 
+                            </div>
+                            <div class="output-amt">
+                                <select name="currency-list2" id="currency-list2" class="currency-list" onchange="convertCurrency()">
+                                    <option value="">CUR.</option>
+                                    <option value="NGN">NGN</option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                                <input type="number" name="amount2" id="amount2" class="amount2" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </center>
+            </section>
+            <section class="x-hero1">
+                    <img src="/cca-images/img1.jpg" alt="" class="img1">
+            </section>
+        </div>
+    </section>
+    <main>
+        <section id="middle-section">
+           
+            </section>
+            <section class="keyfeatures">
+                <h1 class="x-key-header">Key Features</h1>
+                <div class="x-features">
+                    <ul class="first-col col">
+                        <li>Real-Time exchange rates</li>
+                        <li>Comprehensive currency support</li>
+                    </ul>
+                    <ul class="second-col col">
+                        <li>User-friendly tools</li>
+                        <li>Intuitive interface</li>
+                    </ul>
+                    <ul class="third-col col">
+                        <li>Reliable precision</li>
+                        <li>Mobile responsiveness</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section id="lastsection">
+            <footer>
+                <h1 class="name">BRIOLEAYS' DEALINGS</h1>
+                <p class="copyright">
+                    &copy; Copyright 2024
+                </p>
+            </footer>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
